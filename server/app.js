@@ -29,6 +29,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// initialize passport
+require('./config/passport')();
+
 // custime middleware
 app.use((req, res, next) => {
   res.success = data => res.json({ ...data, err: null, success: true });
