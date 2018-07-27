@@ -21,8 +21,9 @@ jobs:
 
       - run: ls
 
-      # - run: cd server
+      - run: cd server
 
+      - run: ls
       # # Download and cache dependencies
       # - restore_cache: # special step to restore the dependency cache 
       #     keys:
