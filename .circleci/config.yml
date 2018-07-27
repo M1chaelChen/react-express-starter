@@ -19,6 +19,6 @@ jobs:
     steps:
       - checkout
 
-      - run: circle
+      - run: source circle
 
 
